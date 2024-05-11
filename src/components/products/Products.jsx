@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./prodcuts.scss";
 import mainUrl from "../../api";
-import Loading from "../loading/loading";
+import Loading from "../loading/Loading";
 import { CiCircleMore } from "react-icons/ci";
 
 function Product() {
