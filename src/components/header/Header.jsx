@@ -5,6 +5,7 @@ import { RiSearchLine } from "react-icons/ri";
 import { CiMenuFries } from "react-icons/ci";
 import SearchModel from "./SearchModel";
 import axios from "../../api";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -25,24 +26,24 @@ const Header = () => {
         <nav className="header__nav">
           <ul className={`header__list ${show ? "header__show" : ""}`}>
             <li className="header__item">
-              <a className="header__link" href="#">
+              <NavLink className="header__link" to={"/"}>
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="header__item">
-              <a className="header__link" href="#">
+              <NavLink className="header__link" to={"/shop"}>
                 Shop All
-              </a>
+              </NavLink>
             </li>
             <li className="header__item">
-              <a className="header__link" href="#">
+              <NavLink className="header__link" to={"/blog"}>
                 Blog
-              </a>
+              </NavLink>
             </li>
             <li className="header__item">
-              <a className="header__link" href="#">
+              <NavLink className="header__link" to={"/aboutPage"}>
                 About us
-              </a>
+              </NavLink>
             </li>
           </ul>
           <div className="header__logo">
